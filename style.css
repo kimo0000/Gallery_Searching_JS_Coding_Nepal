@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #000;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.wrapper {
+  width: 100%;
+  max-width: 650px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+}
+.form input {
+  padding: 15px;
+  border: 1px solid #dede;
+  border-radius: 8px;
+  width: 100%;
+}
+.form input:focus {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+.cards .card {
+  width: 100%;
+  height: 100%;
+}
+.cards .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
